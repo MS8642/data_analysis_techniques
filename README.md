@@ -6,3 +6,4 @@ perhaps some will be done with R language and shiny ( like an app)
 if i build an app that might be better
 should use r studio
 # Perhaps like in the previous apps
+# Using books to find some powerful techniques
