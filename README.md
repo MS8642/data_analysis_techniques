@@ -7,3 +7,5 @@ if i build an app that might be better
 should use r studio
 # Perhaps like in the previous apps
 # Using books to find some powerful techniques
+# Perhaps the app can identify the variables present for analysis and then
+# in the app we can choose which variables to put where for Analysis
