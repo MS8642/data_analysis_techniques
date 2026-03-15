@@ -1,9 +1,59 @@
-install.packages(shiny)
-
 library(shiny)
+library(DT)
+
 ui <- fluidPage(
-  "Hello, world!"
+  titlePanel("CSV Viewer App"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      fileInput(
+        "csv_file",
+        "Upload a CSV file",
+        accept = c(".csv")
+      ),
+      
+      checkboxInput("header", "File has header", TRUE),
+      
+      radioButtons(
+        "sep",
+        "Separator",
+        choices = c(
+          Comma = ",",
+          Semicolon = ";",
+          Tab = "\t"
+        ),
+        selected = ","
+      )
+    ),
+    
+    mainPanel(
+      DTOutput("data_table")
+    )
+  )
 )
+
 server <- function(input, output, session) {
+  
+  uploaded_data <- reactive({
+    req(input$csv_file)
+    
+    read.csv(
+      input$csv_file$datapath,
+      header = input$header,
+      sep = input$sep,
+      stringsAsFactors = FALSE
+    )
+  })
+  
+  output$data_table <- renderDT({
+    datatable(
+      uploaded_data(),
+      options = list(
+        pageLength = 10,
+        scrollX = TRUE
+      )
+    )
+  })
 }
+
 shinyApp(ui, server)
