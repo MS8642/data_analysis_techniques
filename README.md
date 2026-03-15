@@ -11,4 +11,4 @@ should use r studio
 # in the app we can choose which variables to put where for Analysis
 # 15/03/2026
 Made a good start in the app, managed to create a side panel with the possibility of
-a .csv data upload
+a .csv data upload. DT library - helps to show data nicely in the app.
