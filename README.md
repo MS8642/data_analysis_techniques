@@ -5,6 +5,7 @@ the data will be taken from kaggle
 perhaps some will be done with R language and shiny ( like an app)
 if i build an app that might be better
 should use r studio
+r used for stats
 # Perhaps like in the previous apps
 # Using books to find some powerful techniques
 # Perhaps the app can identify the variables present for analysis and then
