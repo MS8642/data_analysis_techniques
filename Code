@@ -59,3 +59,4 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 Starting code for the app
+should make it more compliczted
