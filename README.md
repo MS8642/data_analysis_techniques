@@ -14,3 +14,5 @@ r used for stats
 Made a good start in the app, managed to create a side panel with the possibility of
 a .csv data upload. DT library - helps to show data nicely in the app.
 Perhaps a working window when the data is uploaded will be useful
+# 30/03/2026
+Now the app can help the user to select which variables to analyse.
