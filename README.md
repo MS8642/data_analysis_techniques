@@ -16,3 +16,4 @@ a .csv data upload. DT library - helps to show data nicely in the app.
 Perhaps a working window when the data is uploaded will be useful
 # 30/03/2026
 Now the app can help the user to select which variables to analyse.
+# Need to test it under diff. conditions
